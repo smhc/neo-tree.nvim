@@ -360,7 +360,7 @@ M.open_file = function(state, path, open_cmd)
     if (result or err == "Vim(edit):E325: ATTENTION") then
       events.fire_event(events.FILE_OPENED, path)
     else
-      print(err)
+      log.error(err)
     end
   end
 end
